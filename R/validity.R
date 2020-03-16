@@ -4,6 +4,15 @@ data <- read.csv("D:\\Yuka\\Company\\R\\测试数据.csv")
 
 
 
+#' 效度分析
+#'
+#' @param data 要进行分析的数据
+#' @param n_factors 分析的因子个数
+#'
+#' @return 因子分析结果及推荐的因子个数
+#' @export
+#'
+#' @examples
 validity <- function(data, n_factors){
   library(psych)
   correlations <- cor(data) # 计算变量相关系数矩阵

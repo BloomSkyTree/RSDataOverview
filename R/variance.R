@@ -13,6 +13,16 @@ data=rbind(
 )
 
 
+#' 方差分析
+#'
+#' @param data 进行分析的数据
+#' @param y_colname 定量数据列名
+#' @param x_colname 定类数据列名
+#'
+#' @return df，平方和，均方，f值，p值
+#' @export
+#'
+#' @examples
 anova <- function(data, y_colname, x_colname){
   formula <- as.formula(paste(y_colname, '~', x_colname))
   fit <- aov(formula, data = data)
