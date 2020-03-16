@@ -1,0 +1,18 @@
+Package: RSDataOverview
+Type: Package
+Title: Package for data overview
+Version: 0.1.0
+Author: Yuka
+Maintainer: Yuka <suthdent@qq.com>
+Description: 实现锐研云统计中与数据概览相关的功能。
+    包含频数分析、描述性分析、正态性检验、信度分析、效度分析等五大功能。
+License: None
+Encoding: UTF-8
+LazyData: true
+Depends:
+  R (>= 3.5.0)
+Imports: 
+    jsonlite,
+    psych,
+    epiDisplay
+RoxygenNote: 7.0.2
