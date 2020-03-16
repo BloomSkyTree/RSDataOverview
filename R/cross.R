@@ -3,6 +3,16 @@
 # Date: 2020-03-13
 # TODO: 交叉分析
 
+#' 交叉分析
+#'
+#' @param data 分析对象数据
+#' @param handled 对象数据是否分类并统计各类数目
+#' @param method 要使用的方法，只能是"chisq"和"fisher"二者之一
+#'
+#' @return 分析结果
+#' @export
+#'
+#' @examples
 cross_analysis <- function(data, handled = FALSE, method = "chisq"){
   if(!handled){
     data <- table(data)
